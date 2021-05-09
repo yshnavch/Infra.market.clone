@@ -9,9 +9,11 @@
  .information{
     background-color: rgb(71, 70, 70);
     display: flex;
-    z-index: 1;
-    position: relative;
-   
+    z-index: 100;
+    position: absolute ;
+    align-items: center;
+    width:100%;
+    justify-content: space-between;
  }
 .info{
     position: relative;
@@ -32,7 +34,7 @@
     left:40px;
     text-decoration: none;
     color: #fff;
-    font-size: 0.7em;
+    font-size: 14px;
     transition:0.5s;
     margin-right: 5px;
  }
@@ -47,21 +49,22 @@
     position: relative;
     background-color: rgb(71, 70, 70);
     display:flex;
+    right:125px;
     margin-right:5px ;
     color: #fff;
-    margin-left: 600px;
+    justify-content: center;
+    align-items:center ;
  }
  .enter li{
-    list-style: none; 
-    text-transform: uppercase;
+    list-style: none;   
     padding: 5px 10px;
-    
  }
  .enter li a{
     left:40px;
     text-decoration: none;
+    text-transform: uppercase;
     color: #fff;
-    font-size: 0.7em;
+    font-size: 14px;
     transition:0.5s;
     margin-right: 10px;
  }
@@ -83,7 +86,7 @@
     width:100%;
     min-height: 100vh;
     display: flex;
-    margin-top: 0px;
+    margin-top: 20px;
     padding-top: 0px;
     align-items: center;
     color: #fff;
@@ -260,7 +263,7 @@
     {
         text-decoration: none;
         font-size: 24px;
-    color: #111;
+        color: #111;
     }
     .menu ul li a:hover
     {
@@ -290,11 +293,11 @@
       right: 300px;
     }
     .text h2{
-        font-size:2.3em ;
+        font-size:2em ;
         margin-left:20px;
     }
     .text h3{
-        font-size:2.3em ;
+        font-size:2em ;
         margin-left: 20px;
     }
     .text p{
