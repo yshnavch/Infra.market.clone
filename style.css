@@ -267,7 +267,7 @@
         border-bottom: 3px solid orangered;
     }
 }
-@media(max-width:1300px)
+@media(max-width:500px)
 {
     .top,
     .top header,
