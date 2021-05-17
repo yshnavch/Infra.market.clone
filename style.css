@@ -6,34 +6,36 @@
     padding: 0;  
     font-family: 'poppins';
  }
+ .high{
+     overflow: hidden;
+ }
  .information{
-    background-color: rgb(71, 70, 70);
+    background-color: #363636;
     display: flex;
     z-index: 100;
-    position: absolute ;
+    position: absolute;
     align-items: center;
     width:100%;
     justify-content: space-between;
  }
 .info{
-    position: relative;
-    background-color: rgb(71, 70, 70);
     display:flex;
+    position: relative;
     margin-right:2px ;
-    color: #fff;
+    color: rgb(218, 216, 216);
     margin-left: 200px;
     justify-content: center;
-    align-items: center;
+    align-items:center ;
  }
  .info li{
     list-style: none; 
-    padding: 10px 5px;
+    padding: 7px 3px;
     
  }
  .info li a{
     left:40px;
     text-decoration: none;
-    color: #fff;
+    color: rgb(218, 216, 216);
     font-size: 14px;
     transition:0.5s;
     margin-right: 5px;
@@ -46,25 +48,26 @@
     opacity: 1;
  }
  .enter{
-    position: relative;
-    background-color: rgb(71, 70, 70);
     display:flex;
-    right:125px;
+    position: relative;
+    right:155px;
+    background-color: #363636;
     margin-right:5px ;
-    color: #fff;
+    color: rgb(153, 149, 149);
     justify-content: center;
     align-items:center ;
  }
  .enter li{
-    list-style: none;   
+    list-style: none; 
     padding: 5px 10px;
+    
  }
  .enter li a{
     left:40px;
-    text-decoration: none;
     text-transform: uppercase;
-    color: #fff;
-    font-size: 14px;
+    text-decoration: none;
+    color: rgb(218, 216, 216);
+    font-size: 13px;
     transition:0.5s;
     margin-right: 10px;
  }
@@ -86,7 +89,7 @@
     width:100%;
     min-height: 100vh;
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
     padding-top: 0px;
     align-items: center;
     color: #fff;
@@ -117,8 +120,8 @@
 .navigation{
     display:flex;
     position: relative;
-    margin-right: 15px;
-    right: 20px;
+    margin-right:10px;
+    right: 50px;
     text-transform: uppercase;
     justify-content: center;
     align-items:center ;
@@ -177,27 +180,26 @@
     mix-blend-mode: overlay;
 }
 
-@media(max-width:1300px)
+@media(max-width:1200px)
 {
     .top,
     .top header,
     .logo
     {
         padding: 0px;
-        background-color: rgb(71, 70, 70);;
+        background-color: #363636;
     }
     .logo{
         font-size: 35px;
-        margin-left:0px;
-        padding-left:10px;
+        margin-left: 0px;
+        padding-left: 10px;
     }
     .information{
         display: none;
-        background-color: rgb(71, 70, 70);
+        background-color: #363636;
     }
-    .top.active
-    {
-      right: 300px;
+    .top{
+        margin-top: 0;
     }
     .text h2{
         font-size:2.7em ;
@@ -242,32 +244,37 @@
     }
     .menu
     {
+        display: none;
         position: absolute;
         top: 0;
-        right: 0;
-        width: 300px;
+        left: 0;
+        width: 0;
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items:center;
+        background-color:rgb(34, 33, 33);
+        z-index: 300;
     }
     .menu ul
     {
         position: relative;
+        
     }
     .menu ul li
     {
         list-style: none;
+        padding-bottom: 17px;
+        padding: 8px 8px 8px 30px;
     }
     .menu ul li a
     {
+        
         text-decoration: none;
-        font-size: 24px;
-        color: #111;
+        font-size: 14px;
+        color:#fff;
+        
     }
-    .menu ul li a:hover
+    .menu ul :hover
     {
-        border-bottom: 3px solid orangered;
+        background-color:rgb(71, 70, 70);
     }
 }
 @media(max-width:500px)
@@ -277,20 +284,19 @@
     .logo
     {
         padding: 0px;
-        background-color: rgb(71, 70, 70);;
+        background-color: #363636;
     }
     .logo{
         font-size: 35px;
-        margin-left:0px;
-        padding-left:10px;
+        margin-left: 0px;
+        padding-left: 10px;
+    }
+    .top{
+        margin-top: 0;
     }
     .information{
         display: none;
-        background-color: rgb(71, 70, 70);
-    }
-    .top.active
-    {
-      right: 300px;
+        background-color: #363636;
     }
     .text h2{
         font-size:2em ;
@@ -335,31 +341,36 @@
     }
     .menu
     {
+        display: none;
         position: absolute;
         top: 0;
-        right: 0;
-        width: 300px;
+        left: 0;
+        width: 0;
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items:center;
+        background-color:rgb(34, 33, 33);
+        z-index: 300;
     }
     .menu ul
     {
         position: relative;
+        
     }
     .menu ul li
     {
         list-style: none;
+        padding-bottom: 17px;
+        padding: 8px 8px 8px 30px;
     }
     .menu ul li a
     {
+        
         text-decoration: none;
-        font-size: 24px;
-    color: #111;
+        font-size: 14px;
+        color:#fff;
+        
     }
-    .menu ul li a:hover
+    .menu ul :hover
     {
-        border-bottom: 3px solid orangered;
+        background-color:rgb(71, 70, 70);
     }
 }
