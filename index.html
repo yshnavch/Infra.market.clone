@@ -50,7 +50,7 @@
     </section>
     <div class="menu">
         <ul>
-          <li><a href="#">About Us</a></li>
+                <li><a href="#">About Us</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Customers</a></li>
                 <li><a href="#">Partners</a></li>
@@ -61,10 +61,22 @@
     <script>
         const menuToggle = document.querySelector('.toggle');
         const showcase = document.querySelector('.top');
-
+        const nav = document.querySelector('.menu');
+        let i=0;
         menuToggle.addEventListener('click', () => {
-        menuToggle.classList.toggle('active');
-        showcase.classList.toggle('active');
+            if(i==0)
+            {
+                nav.style.display= "grid";
+                nav.style.width = "70vw";
+                menuToggle.classList.toggle('active');
+                i=i+1;
+            }
+            else{
+                nav.style.display= "none";
+                menuToggle.classList.toggle('active');
+                i=0;
+            }
+        
       })
     </script>
 </body>
