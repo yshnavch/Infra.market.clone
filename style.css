@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
 *{
     box-sizing: border-box;
     margin :0;
     padding: 0;  
     font-family: 'poppins';
+    overflow: hidden;
  }
- .high{
-     overflow: hidden;
- }
+
  .information{
     background-color: #363636;
     display: flex;
@@ -16,27 +15,42 @@
     position: absolute;
     align-items: center;
     width:100%;
-    justify-content: space-between;
+    justify-content: center;
+
+
+    top:0;
+    left:0;
+    margin: 0 auto;
+    
  }
 .info{
     display:flex;
     position: relative;
     margin-right:2px ;
     color: rgb(218, 216, 216);
-    margin-left: 200px;
-    justify-content: center;
+    
+    justify-content: space-between;
     align-items:center ;
+    left: 0;
+    margin-right: 530px;
+    
+    
+
  }
  .info li{
     list-style: none; 
     padding: 7px 3px;
     
  }
+ .info li i{
+     padding-right: 3px;
+     font-size: 15px;
+ }
  .info li a{
     left:40px;
     text-decoration: none;
     color: rgb(218, 216, 216);
-    font-size: 14px;
+    font-size: 13px;
     transition:0.5s;
     margin-right: 5px;
  }
@@ -50,17 +64,22 @@
  .enter{
     display:flex;
     position: relative;
-    right:155px;
+    right:0;
     background-color: #363636;
-    margin-right:5px ;
+    margin-left: 0;
+    margin-right:0 ;
     color: rgb(153, 149, 149);
     justify-content: center;
     align-items:center ;
  }
  .enter li{
     list-style: none; 
-    padding: 5px 10px;
+    padding: 5px 5px;
     
+ }
+ .enter li i{
+     padding-right: 5px;
+     font-size: 15px;
  }
  .enter li a{
     left:40px;
@@ -69,7 +88,7 @@
     color: rgb(218, 216, 216);
     font-size: 13px;
     transition:0.5s;
-    margin-right: 10px;
+    margin-right: 5px;
  }
 .enter li a:hover{
     color: orangered;
@@ -79,7 +98,7 @@
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
-  margin-left: 100px;
+  margin-right: 245px;
   font-size:45px ;
   font-family: 'rajdhani';
 }
@@ -90,8 +109,10 @@
     min-height: 100vh;
     display: flex;
     margin-top: 10px;
+
     padding-top: 0px;
     align-items: center;
+    justify-content:center;
     color: #fff;
     z-index: 2;
 }
@@ -100,11 +121,12 @@
     top:0;
     left:0;
     width:100%;
-    padding: 40px 100px;
+    padding: 40px 0;
     z-index:1000;
     display:flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    
    
 }
 .top video{
@@ -120,11 +142,11 @@
 .navigation{
     display:flex;
     position: relative;
-    margin-right:10px;
-    right: 50px;
+    margin-left:0px;
+    right: 0;
     text-transform: uppercase;
     justify-content: center;
-    align-items:center ;
+    
     flex-wrap: wrap;
 
 }
@@ -146,17 +168,17 @@
     z-index: 10;
 }
 .text h2{
-    font-size: 3.5em;
-    margin-left:200px;
-    padding-top: 10px;
+    font-size: 3.7em;
+    
+
 
     font-weight: 1000;
     color: #fff;
 }
 
 .text h3{
-    font-size: 3.5em;
-    margin-left: 200px;
+    font-size: 3.7em;
+    
     
     font-weight: 1000;
     color: orangered;
@@ -165,7 +187,10 @@
 .text p{
     font-size: 1.5em;
     color:#fff;
-    margin:20px 200px;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 400px;
+    
     font-weight: 400;
     
     max-width: 700px;
@@ -179,8 +204,21 @@
     background:rgb(56, 55, 55);
     mix-blend-mode: overlay;
 }
-
 @media(max-width:1200px)
+{
+    .info{
+        margin-right: 360px;
+    }
+    .text p{
+        max-width: 550px;
+        
+    }
+    .logo{
+        
+        margin-right: 100px;
+    }
+}
+@media(max-width:1000px)
 {
     .top,
     .top header,
@@ -194,24 +232,29 @@
         margin-left: 0px;
         padding-left: 10px;
     }
+    .top header{
+        justify-content: space-between;
+    }
     .information{
         display: none;
         background-color: #363636;
     }
     .top{
         margin-top: 0;
+        justify-content: space-between;
     }
     .text h2{
-        font-size:2.7em ;
-        margin-left:20px;
+        font-size:50px ;
+        margin-left:15px;
     }
     .text h3{
-        font-size:2.7em ;
-        margin-left: 20px;
+        font-size:50px ;
+        margin-left: 15px;
     }
     .text p{
-        font-size: 1.4em;
-        margin-left: 20px;
+        font-size: 24px;
+        margin-left: 15px;
+        max-width: 500px;
     }
     .info{
         margin-left:23px;
@@ -277,100 +320,28 @@
         background-color:rgb(71, 70, 70);
     }
 }
-@media(max-width:500px)
-{
-    .top,
-    .top header,
-    .logo
-    {
-        padding: 0px;
-        background-color: #363636;
-    }
-    .logo{
-        font-size: 35px;
-        margin-left: 0px;
-        padding-left: 10px;
-    }
-    .top{
-        margin-top: 0;
-    }
-    .information{
-        display: none;
-        background-color: #363636;
-    }
+@media(max-width:769px){
     .text h2{
-        font-size:2em ;
-        margin-left:20px;
+        font-size:40px ;
     }
     .text h3{
-        font-size:2em ;
-        margin-left: 20px;
+        font-size:40px ;
     }
     .text p{
-        font-size: 1em;
-        margin-left: 20px;
+        font-size:23px ;
+        width: 80%;
+        margin-top: 20px;
     }
-    .info{
-        margin-left:23px;
+} 
+@media(max-width:400px)
+{
+    .text h2{
+        font-size:30px ;
     }
-    .information{
-        position: absolute;
+    .text h3{
+        font-size:30px ;
     }
-    .navigation
-    {
-        display:none;
-    }
-    .toggle
-    {
-        position: relative;
-        width: 60px;
-        height: 60px;
-        background: url(https://i.ibb.co/HrfVRcx/menu.png);
-        background-repeat: no-repeat;
-        background-size: 30px;
-        background-position: center;
-        cursor: pointer;
-    }
-    .toggle.active
-    {
-        background: url(https://i.ibb.co/rt3HybH/close.png);
-        background-repeat: no-repeat;
-        background-size: 25px;
-        background-position: center;
-        cursor: pointer;
-    }
-    .menu
-    {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        background-color:rgb(34, 33, 33);
-        z-index: 300;
-    }
-    .menu ul
-    {
-        position: relative;
-        
-    }
-    .menu ul li
-    {
-        list-style: none;
-        padding-bottom: 17px;
-        padding: 8px 8px 8px 30px;
-    }
-    .menu ul li a
-    {
-        
-        text-decoration: none;
-        font-size: 14px;
-        color:#fff;
-        
-    }
-    .menu ul :hover
-    {
-        background-color:rgb(71, 70, 70);
+    .text p{
+        font-size:18px ;
     }
 }
