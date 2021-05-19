@@ -45,6 +45,8 @@
  .info li i{
      padding-right: 3px;
      font-size: 15px;
+     position: relative;
+     top:3px;
  }
  .info li a{
     left:40px;
@@ -80,6 +82,8 @@
  .enter li i{
      padding-right: 5px;
      font-size: 15px;
+     top:3px;
+     position: relative;
  }
  .enter li a{
     left:40px;
