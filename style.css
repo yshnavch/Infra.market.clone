@@ -162,7 +162,7 @@
     margin-right: 20px;
 }
 .navigation li a:hover{
-    border-bottom: 3px solid orangered;
+    text-decoration: underline 3px solid orangered;
 }
 .navigation li{
     list-style: none; 
