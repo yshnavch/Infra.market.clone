@@ -347,6 +347,10 @@
     }
     .text p{
         font-size:18px ;
-        margin-right:0px;
     }
+    .logo{
+        font-size: 28px;
+        margin-right: 0px ;
+    }
+    
 }
