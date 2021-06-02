@@ -5,8 +5,92 @@
     margin :0;
     padding: 0;  
     font-family: 'poppins';
-    overflow: hidden;
+    
  }
+ body{
+    overflow-x: hidden;
+ }
+ #about{
+        padding: 60px 0;
+ }
+ .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 1130px;
+    margin-right: auto;
+     margin-left: auto;
+}
+ .next{
+    
+     width: 100%;
+     position: absolute;
+     top:100%;
+     color:#111;
+     
+ }
+.container h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 35px;
+    font-size: 40px;
+    display: block;
+    font-weight: 600;
+    width: fit-content;
+    height: fit-content;
+    
+    
+} 
+.container h4 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.container h2:before {
+    background: #F15927;
+    height: 4px;
+    position: absolute;
+    left: 3px;
+    bottom: -2px;
+    content: '';
+    width: 50%;
+    
+}
+.who{
+    text-align: center;
+}
+.who img {
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+}
+.who h4{
+    margin-bottom: 20px;
+    height: 50px;
+}
+.who p{
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-size: 15px;
+}
+ .col{
+     max-width: 25%;
+     position: relative;
+    
+    padding-right: 15px;
+    padding-left: 15px;
+     
+ }
+ .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
 
  .information{
     background-color: #363636;
@@ -16,7 +100,7 @@
     align-items: center;
     width:100%;
     justify-content: center;
-
+    
 
     top:0;
     left:0;
@@ -93,6 +177,7 @@
     font-size: 13px;
     transition:0.5s;
     margin-right: 5px;
+    
  }
 .enter li a:hover{
     color: orangered;
@@ -106,19 +191,27 @@
   font-size:45px ;
   font-family: 'rajdhani';
 }
+
 .top{
     position: absolute;
     right :0;
     width:100%;
-    min-height: 100vh;
+    height: 100%;
     display: flex;
     margin-top: 10px;
-
+    overflow-x: hidden;
     padding-top: 0px;
     align-items: center;
     justify-content:center;
     color: #fff;
     z-index: 2;
+}
+.sticky {
+    position: fixed !important;
+    background: #333 !important;
+    height:50px !important;
+    padding: 5px 0 !important ;
+    z-index: 100000;
 }
 .top header{
     position: absolute;
@@ -221,6 +314,9 @@
         
         margin-right: 100px;
     }
+    .container {
+        max-width: 960px;
+    }
 }
 @media(max-width:1000px)
 {
@@ -238,6 +334,7 @@
     }
     .top header{
         justify-content: space-between;
+        position: fixed;
     }
     .information{
         display: none;
@@ -246,6 +343,7 @@
     .top{
         margin-top: 0;
         justify-content: space-between;
+       
     }
     .text h2{
         font-size:50px ;
@@ -292,13 +390,14 @@
     .menu
     {
         display: none;
-        position: absolute;
+        position: fixed;
         top: 0;
+        bottom: 0;
         left: 0;
         width: 0;
-        height: 100vh;
+        
         background-color:rgb(34, 33, 33);
-        z-index: 300;
+        z-index: 100000;
     }
     .menu ul
     {
@@ -323,6 +422,9 @@
     {
         background-color:rgb(71, 70, 70);
     }
+    .col{
+        max-width: 50%;
+    }
 }
 @media(max-width:769px){
     .text h2{
@@ -336,21 +438,34 @@
         width: 80%;
         margin-top: 20px;
     }
+    .col{
+        max-width: 100%;
+    }
+    .container h2{
+        font-size: 30px;
+    }
+    .container h4{
+        font-size: 18px;
+    }
 } 
 @media(max-width:500px)
 {
     .text h2{
-        font-size:27px ;
+        font-size:30px ;
     }
     .text h3{
-        font-size:27px ;
+        font-size:30px ;
     }
     .text p{
-        font-size:18px ;
+        font-size:16px ;
+        max-width: 250px;
     }
     .logo{
         font-size: 28px;
         margin-right: 0px ;
+    }
+    .next{
+        top:100%;
     }
     
 }
