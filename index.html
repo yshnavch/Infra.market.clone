@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Infra Market</title>
 </head>
-<body>
+<body id = "head">
     <section class="information">
         <div class="info">
             <li><a href="#"><i class="fa fa-phone"></i>+91-7021513762</a></li>
@@ -26,8 +26,8 @@
             <li><a href="#"><i class="fa fa-sign-in"></i> Sign Up</a></li>
         </div>
     </section>
-    <section class="top">
-        <header>
+    <section  class="top">
+        <header class ="some">
             <h2 class="logo">INFRA.MARKET</h2>
             <div class="toggle"></div>
             <div class="navigation">
@@ -58,9 +58,51 @@
                 <li><a href="#">Careers</a></li>
                 <li><a href="#">Blogs</a></li>
         </ul>
-      </div>
+    </div>
+ <section class='next'>
+    <section id="about" class="about-section" style="background-image: url(https://infra.market/wp-content/uploads/2020/07/image-2.png); background-repeat: no-repeat">
+        <div class="home-about-con">
+            <div class="container">
+                <h2>Who we are</h2>
+                
+                <h4>We at Infra.Market are trying to effectively manage disruption throughout the construction ecosystem as we prepare all players for the next normal.</h4>
+                <div class="row">
+                    <div class="col">
+                        <div class="who">
+                            <img src="https://infra.market/wp-content/themes/inframarket/assets/images/contractors.png">
+                            <h4>Contractors</h4>
+                            <p>Create a product house without manufacturing and build a vertically integrated platform to provide end to end products and services</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="who">
+                            <img src="https://infra.market/wp-content/themes/inframarket/assets/images/designers.png">
+                            <h4>Designers and Engineers</h4>
+                            <p>Build capabilities of design and offsite manufacturing facilities. Consolidate to gain scale and internationalize footprint</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="who">
+                            <img src="https://infra.market/wp-content/themes/inframarket/assets/images/materials.png">
+                            <h4>Materials Manufacturers</h4>
+                            <p>Double down on operational excellence by digitizing processes and manufacturing plants by adopting lean and agile principles. Integrate in value chain by developing solutions</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="who">
+                            <img src="https://infra.market/wp-content/themes/inframarket/assets/images/component.png">
+                            <h4>Component Manufacturers</h4>
+                            <p>Gain scale and standardize across borders. Investing in digitalization while avoiding commoditization. Modularize products and service offerings to enable standardization and reduce variances</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+      
+    </section>
     
-
+</section>
     <script>
         const menuToggle = document.querySelector('.toggle');
         const showcase = document.querySelector('.top');
@@ -81,6 +123,110 @@
             }
         
       })
+
+      //var wrap = $("#head");
+     // var cont= $(".top");
+      //console.log(wrap);
+     // console.log(cont);
+        // console.log(showcase);
+        // window.addEventListener('scroll', function(e) {
+        //     console.log("hey");
+        //     if (this.scrollTop > 147) {
+        //         showcase.classList.add("sticky");
+        //     } else {
+        //         showcase.classList.remove("sticky");
+        //     }
+        // });
+        $(document).ready(function() {
+         var windowSize = $(window).width();
+         $(window).scroll(function(){
+             if(windowSize >= 1200)
+            { 
+                if ($(this).scrollTop() > 100) {
+                    $('.some').addClass('sticky');
+                }
+                else{
+                    $('.some').removeClass('sticky');
+                }
+            }
+        });
+    });
+// $(document).ready(function() {
+//     var windowSize = $(window).width();
+//     $(window).scroll(function(){
+//      if(windowSize >= 1200)
+//      {
+//       if ($(this).scrollTop() > 100) {
+//          $('.some').css('position','fixed');
+//          $('.some').css('padding-top','0');
+//          $('.some').css('padding-bottom','0');
+//          $('.some').css('background','#333');
+//          $('.some').css('height','50px');
+//          $('.logo').css('font-size','30px');
+//          $('.logo').css('margin-right','300px');
+         
+//       } else {
+//          $('.some').css('position','absolute');
+//          $('.some').css('padding-top','70px');
+//          $('.some').css('padding-bottom','40px');
+//          $('.some').css('background','none');
+//          $('.some').css('height','50px');
+//          $('.logo').css('font-size','45px');
+//          $('.logo').css('margin-right','245px');
+//       }
+//     }
+//     else if(windowSize <= 1200 && windowSize >= 1000){
+//         if ($(this).scrollTop() > 100) {
+//          $('.some').css('position','fixed');
+//          $('.some').css('padding-top','0');
+//          $('.some').css('padding-bottom','0');
+//          $('.some').css('background','#333');
+//          $('.some').css('height','50px');
+//          $('.logo').css('font-size','30px');
+//          $('.logo').css('margin-right','150px');
+         
+//       } else {
+//          $('.some').css('position','absolute');
+//          $('.some').css('padding-top','70px');
+//          $('.some').css('padding-bottom','40px');
+//          $('.some').css('background','none');
+//          $('.some').css('height','50px');
+//          $('.logo').css('font-size','45px');
+//          $('.logo').css('margin-right','100px');
+//       }
+
+//     }
+//   });
+//     window.onresize = function() {
+        
+//          windowSize = $(window).width();
+//          $(window).scroll(function(){
+//      if(windowSize >= 1200)
+//      {
+//       if ($(this).scrollTop() > 100) {
+//          $('.some').css('position','fixed');
+//          $('.some').css('padding-top','0');
+//          $('.some').css('padding-bottom','0');
+//          $('.some').css('background','#333');
+//          $('.some').css('height','50px');
+//          $('.logo').css('font-size','30px');
+//          $('.logo').css('margin-right','300px');
+         
+//       } else {
+//          $('.some').css('position','absolute');
+//          $('.some').css('padding-top','70px');
+//          $('.some').css('padding-bottom','40px');
+//          $('.some').css('background','none');
+//          $('.some').css('height','50px');
+//          $('.logo').css('font-size','45px');
+//          $('.logo').css('margin-right','245px');
+//       }
+//     }
+//   });
+//         console.log(windowSize);
+//     }
+  
+ 
     </script>
 </body>
 </html>
