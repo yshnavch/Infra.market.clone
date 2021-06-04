@@ -155,6 +155,22 @@
                 }
             }
         });
+            
+         window.onresize = function() {
+        
+            var Size = $(window).width();
+        $(window).scroll(function(){
+             if(Size >= 1000)
+            { 
+                if ($(this).scrollTop() > 100) {
+                    $('.some').addClass('sticky');
+                }
+                else{
+                    $('.some').removeClass('sticky');
+                }
+            }
+        });
+    }
     });
 // $(document).ready(function() {
 //     var windowSize = $(window).width();
