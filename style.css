@@ -10,6 +10,13 @@
  body{
     overflow-x: hidden;
  }
+::-webkit-scrollbar{
+     width: 8px;
+ }
+ ::-webkit-scrollbar-thumb{
+     background: orangered;
+     border-radius: 8px;
+ }
 .scroll{
     position: absolute;
     top:calc(100vh - 40px);
